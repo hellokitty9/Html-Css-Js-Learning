@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-文本外观属性-装饰</title>
+    <style>
+        div {
+            /* text-decoration 属性规定添加到文本的修饰 可以给文本添加下划线、删除线、上划线 */
+            text-decoration: line-through;
+            /* underline 下划线， line-through 删除线， overline 上划线， none （默认）没有装饰线 */
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>这是一条删除线</div>
+    <!-- 链接 a 自带下划线 并且字体颜色默认蓝色 -->
+    <a href="#">链接删除默认的下划线，并将蓝色的链接文字改为红色文字</a>
+</body>
+
+</html>

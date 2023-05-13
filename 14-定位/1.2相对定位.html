@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        /* 相对定位是元素在移动位置的时候，相对于它原来的位置来说 */
+
+        /* 特点： */
+        /* 1.它是相对于自己原来的位置进行移动 */
+        /* 2.原来在标准流的位置继续占有，后面的盒子仍然以标准流的方式对待。（不脱标，继续保留原来位置） */
+        .box1 {
+            position: relative;
+            top: 100px;
+            left: 150px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

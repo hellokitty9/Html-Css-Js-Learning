@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS优先级</title>
+    <!-- 继承 或者 *              0,0,0,0 -->
+    <!-- 元素选择器               0,0,0,1 -->
+    <!-- 类选择器 伪类选择器      0,0,1,0    -->
+    <!-- ID选择器                 0,1,0,0 -->
+    <!-- 行类样式                 1,0,0,0 -->
+    <!-- !important               无穷大 -->
+    <style>
+        .test {
+            color: red;
+        }
+
+        div {
+            /* !important优先权重最高 */
+            color: pink !important;
+        }
+
+        #demo {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test" id="demo" style="color: purple">不同选择器对同一对象优先级不同</div>
+</body>
+
+</html>

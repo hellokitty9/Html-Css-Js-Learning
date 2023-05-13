@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子阴影</title>
+    <style>
+        /* CSS3中新增盒子阴影，使用box-shadow属性为盒子添加阴影 */
+        /* 属性值：h-shadow(水平阴影-必须有) v-shadow(垂直阴影-必须有) blur(模糊距离) spread(阴影的尺寸) color(阴影的颜色)
+            inset(将外部阴影改为内部阴影) */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 150px auto;
+            /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3); */
+        }
+
+        div:hover {
+            box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

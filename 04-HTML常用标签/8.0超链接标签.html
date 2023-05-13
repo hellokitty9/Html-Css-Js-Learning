@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接标签</title>
+</head>
+
+<body>
+    <h4>1.外部链接</h4>
+    <a href="http://www.baidu.com" target="_blank"> 百度</a>
+    target 打开窗口的方式 默认值是 _self 当前窗口打开界面 _blank 新窗口打开界面
+    <p>
+        <a href="https://www.miyoushe.com/" target="_blank">米游社</a>
+    </p>
+
+    <h4>2.内部链接(网站内部页面之间的相互链接):</h4>
+    <a href="8.1超链接内部链接使用.html" target="_blank">图片链接</a>
+
+    <h4>3.空链接：#</h4>
+    <a href="#" target="_self">图片链接</a>
+
+    <h4>4.下载链接：地址链接是文件 .exe 或者是 .zip 等压缩包的形式</h4>
+    <a href="image01/04_HD.zip" height="600">下载文件</a>
+
+    <h4>5.网页元素链接：在网页中的各种网页元素添加超链接 如：文本、图像、表格、音频、视频等</h4>
+    <a href="http://www.baidu.com" target="_blank"> <img src="image01/04_HD.jpg" height="600" title="前往百度"> </a>
+
+    <h4>6.锚点链接：点击链接，可以快速定位到页面中的某个位置</h4>
+    <p>在链接文本的href属性中，设置属性值为 #名称 的形式</p> <!--   切记需要加#   -->
+    <p>找到目标位置标签，里面添加一个id属性 = 上面的名称</p>
+    <a href="8.2锚点链接举例.html" target="_blank">锚点链接举例</a>
+
+</body>
+
+</html>

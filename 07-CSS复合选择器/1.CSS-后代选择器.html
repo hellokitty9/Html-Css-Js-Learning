@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <!-- 后代选择器又称包含选择器，可以选择父元素里的子元素 -->
+    <style>
+        /* 将ol中的li选择 并更改颜色 */
+        /* 下面写法仅仅改变ol里的li 不会改变ol里li外的元素 */
+        /* li里的元素会全部改变 */
+        ol li {
+            color: #39c5bb;
+        }
+
+        ol li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <!-- 不改变ol里li外的元素 -->
+        <li>ol中的孩子</li>
+        <li>ol中的孩子</li>
+        <li><a href="#">ol中的孩子</a></li>
+    </ol>
+    <!-- 出现多个相同的情况 可添加类 加以区分 -->
+    <ul>
+        <li>ul中的孩子</li>
+        <li>ul中的孩子</li>
+        <li>ul中的孩子</li>
+    </ul>
+    <ul class="nav">
+        <li>ul中的孩子</li>
+        <li>ul中的孩子</li>
+        <li><a href="#">ul中的孩子</a></a></li>
+    </ul>
+</body>
+
+</html>

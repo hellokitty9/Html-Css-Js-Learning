@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位叠放次序 z-index </title>
+    <!-- 在使用定位布局时，可能会出现盒子重叠的情况。 -->
+    <!-- 此时可以使用 z-index 来控制盒子的前后次序（z轴） -->
+    <!-- 语法：z-index: 1; -->
+    <!-- 数值可以是正整数、负整数或0，默认是auto，数值越大，盒子越靠上 -->
+    <!-- 如果属性相同，则按照书写顺序，后来者居上 -->
+    <!-- 注意：1.数字后面不能加单位 -->
+    <!-- 只有定位的盒子才有 z-index 属性 -->
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background-color: red;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .box2 {
+            background-color: green;
+            top: 100px;
+            left: 100px;
+        }
+
+        .box3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+</body>
+
+</html>

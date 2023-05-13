@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动特性1</title>
+    <!-- 1.脱标特性：脱离标准流的控制，并移动到指定位置 -->
+    <!-- 可理解为图层概念（使其上移图层） -->
+    <!-- 2.浮动的盒子不在保留原先的位置 -->
+    <style>
+        .box1 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">浮动盒子</div>
+    <div class="box2">标准流盒子</div>
+</body>
+
+</html>

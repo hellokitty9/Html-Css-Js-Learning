@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-子选择器</title>
+    <!-- 子元素选择器（子选择器）只能选择作为某元素的最近一级子元素 不会影响孙子 -->
+    <style>
+        /* 子选择器使用规定 父元素>子元素 */
+        .nav>a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">儿子层</a>
+
+        <p>
+            <a href="#">孙子层</a>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粘性定位</title>
+    <!-- 粘性定位可以被认为是相对定位和固定定位的混和。 -->
+    <!-- 语法：position: sticky; -->
+    <!-- 特点：1.以浏览器的可视窗口为参照点移动元素（固定定位特点） -->
+    <!-- 2.粘性定位占有原先的位置（相对定位特点） -->
+    <!-- 3.必须添加top、left、right、bottom其中一个才有效 -->
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .nav {
+            position: sticky;
+            top: 10px;
+            width: 800px;
+            height: 50px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">导航栏</div>
+</body>
+
+</html>

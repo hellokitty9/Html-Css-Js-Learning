@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体属性</title>
+    <style>
+        /* 使用 font-family 属性定义文本的字体系列 */
+        h3 {
+            font-family: "微软雅黑";
+        }
+
+        /* 使用多字体时 之间用英文状态下的逗号隔开 若电脑中没有下载对应字体 从左到右优先选择字体 */
+        p {
+            font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* 使用 font-size 属性定义字体的大小 */
+        /* 谷歌浏览器文字默认16px（像素） */
+        /* 给body指定整个页面的文字大小 */
+        body {
+            font-size: 20px;
+        }
+
+        /* 标题的文字大小比较特殊 body不能改变标题文字大小 若需要修改，需单独修改 */
+        h3 {
+            font-size: 25px;
+        }
+
+        /* 使用 font-weight 属性设置字体的粗细 */
+        /* strong 属性也可设置字体粗细 */
+        /*  number 可设置字体粗细（推荐），normal 正常字体 相当于number下的400 ， bold 粗体（700） ， bolder 特粗体 ， lighter 细体  */
+        .bold {
+            /* 数字后面不加单位 */
+            font-weight: 700;
+            /*number属性 700效果与bold相同*/
+        }
+
+        .weight-normal {
+            font-weight: 400;
+        }
+
+        /* 使用 font-style 属性设置字体的倾斜 */
+        /* normal (默认）正常 ， italic 倾斜 */
+        /* em、i 标签也可设置斜体 */
+        .italic {
+            font-style: italic;
+        }
+
+        .style-normal {
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>1.1 非线性系统的研究背景与意义</h3>
+    <p class="italic">随着科技的进步和控制理论的不断发展，线性控制理论的研究日渐趋于成熟，相关成果被广泛运用到各种实际系统中，如电力系统，工业系统，智能机器人等领域。
+    </p>
+    <p class="bold">为了能够更精确地控制目标，需要对受控系统进行精确地建模。然而，在实际系统中，由于环境复杂或者资金有限等问题，完全精确的建模是难以实现的。</p>
+
+    <strong class="weight-normal">粗体变正常</strong> <br>
+
+    <em class="style-normal">斜体变正常</em>
+</body>
+
+</html>

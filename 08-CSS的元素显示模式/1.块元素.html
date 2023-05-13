@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块元素</title>
+    <!-- 文字类的元素内不能使用块级元素 -->
+    <!-- 例：<p> <h1>~<h6> 标签不能放 <div> -->
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            /* 即使有宽限制，也单独占据一行 */
+            background-color: #26c539;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 块元素的特点 -->
+    <!-- 1.独占一行 -->
+    <!-- 2.高度、宽度、外边距以及内边距都可以控制 -->
+    <!-- 3.宽度默认是容器（父级宽度）的100% -->
+    <!-- 4.是一个容器及盒子，里面可以放行内或者块级元素 -->
+    <div>独占一行</div> 不可占据div
+</body>
+
+</html>

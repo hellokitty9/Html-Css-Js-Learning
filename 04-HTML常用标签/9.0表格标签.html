@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+
+<body>
+    <!-- <table></table>创建表格 -->
+    <!-- <tr></tr>表格中的行 -->
+    <!-- <tr></tr>中只能放置<td></td> -->
+    <!-- <td></td>表格行中的元素 -->
+    <!-- <td></td>中可以放置所有元素 -->
+    <table>
+        <tr>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+        </tr>
+
+        <tr>
+            <td>ldg</td>
+            <td>男</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>hfb</td>
+            <td>男</td>
+            <td>19</td>
+        </tr>
+
+        <tr>
+            <td>cyf</td>
+            <td>男</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+    <!-- <th>标文字加粗显示</th> -->
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+
+
+        <tr>
+            <td>ldg</td>
+            <td>男</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>hfb</td>
+            <td>男</td>
+            <td>19</td>
+        </tr>
+
+        <tr>
+            <td>cyf</td>
+            <td>男</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+
+    <!-- 以下属性要写到表格标签 table 里 -->
+    <!-- align：(属性：lift,center,right) 规定表格相对周围元素的对齐方式 -->
+    <!-- border：规定表格单元是否有边框，默认为0 -->
+    <!-- cellpadding：规定单元边沿与其内容之间的空白，默认1像素 -->
+    <!-- cellspacing：规定单元格之间的空白，默认2像素 -->
+    <!-- width、height：规定表格的宽度、高度 -->
+    <!-- 以上在css中实现 -->
+
+    <!-- <thead></thead>定义表格的头部 -->
+    <!-- <tbody></tbody>定义表格的主体 -->
+    <table align="center" border="1" cellpadding="15" cellspacing="0" width="500">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>ldg</td>
+                <td>男</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <td>hfb</td>
+                <td>男</td>
+                <td>19</td>
+            </tr>
+
+            <tr>
+                <td>cyf</td>
+                <td>男</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p></p>
+    <!-- 合并单元格 -->
+    <!-- 跨行合并：rowspan="合并单元格的个数" -->
+    <!-- 跨列合并：colspan="合并单元格的个数" -->
+    <!-- 目标单元格：以靠近左上方为基准的单元格 -->
+    <table align="center" border="1" cellspacing="0" cellpadding="20" width="500" height="300">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+
+        </tr>
+
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

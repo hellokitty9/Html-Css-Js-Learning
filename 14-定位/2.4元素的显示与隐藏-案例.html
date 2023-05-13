@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的显示与隐藏-案例</title>
+    <style>
+        .box {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            background-color: pink;
+            margin: 60px auto;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mask {
+            /* 隐藏遮罩层 */
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .box:hover .mask {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="mask"></div>
+        <img src="../image/yuanshen.jpg" alt="">
+    </div>
+    <div class="box">
+        <div class="mask"></div>
+        <img src="../image/yuanshen.jpg" alt="">
+    </div>
+    <div class="box">
+        <div class="mask"></div>
+        <img src="../image/yuanshen.jpg" alt="">
+    </div>
+    <div class="box">
+        <div class="mask"></div>
+        <img src="../image/yuanshen.jpg" alt="">
+    </div>
+</body>
+
+</html>

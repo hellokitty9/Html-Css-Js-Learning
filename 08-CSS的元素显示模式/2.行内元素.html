@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素</title>
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 行内元素的特点 -->
+    <!-- 1.相邻行内元素在一行上，一行可以显示多个 -->
+    <!-- 2.高度、宽度直接设置是无效的 -->
+    <!-- 3.默认宽度是它本身内容的宽度 -->
+    <!-- 4.行内元素只能容纳文本和其他行内元素 不能放置块级元素 -->
+    <span>123</span> <strong>789</strong>
+    <span>123456</span> <strong>789</strong>
+
+    <!-- 特殊行内元素： -->
+    <!-- 1.链接里面不能再次放置链接 -->
+    <!-- <a href="http://www.baidu.com">
+        <a href="#"></a>
+    </a> -->
+    <!-- 2.特殊情况链接<a>里面可以放块级元素 最好将<a>转换为块级元素 -->
+</body>
+
+</html>

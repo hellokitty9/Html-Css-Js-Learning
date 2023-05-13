@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距的典型应用</title>
+    <style>
+        div {
+            /* 外边距可以让块级盒子水平居中 */
+            /* 必须满足的条件：1、盒子必须指定了宽度 2、盒子左右外边距都设置为auto */
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+        .head {
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head"></div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>并行选择器</title>
+    <!-- 并集选择器可以选择多组标签 同时定义样式 -->
+    <!-- 并集选择器的使用 将各选择器通过英文,（逗号）连接 任何形式的选择器都可以作为并行选择器的一部分  -->
+    <!-- 并集选择器语法规范：竖着写代码 -->
+    <style>
+        div,
+        p,
+        .number li {
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 使div、p、ul中的li 改为相同的样式 -->
+    <div>人物1</div>
+    <p>人物2</p>
+    <span>不做更改</span>
+    <ul class="number">
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+    </ul>
+</body>
+
+</html>

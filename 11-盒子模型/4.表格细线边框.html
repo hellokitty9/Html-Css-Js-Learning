@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格细线边框</title>
+    <style>
+        table {
+            width: 500px;
+            height: 251px;
+            font-size: 14px;
+            text-align: center;
+            /* 相邻表格边框会出现边框线变粗的情况 用 border-collapse: collapse; 使相邻表格的边框合并 */
+            border-collapse: collapse;
+
+        }
+
+        th {
+            height: 80px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" cellspacing="0">
+        <tr>
+            <th>排名</th>
+            <th>关键词</th>
+            <th>今日搜索量(万次)</th>
+            <th>最近一周(万次)</th>
+            <th>相关链接</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>原神</td>
+            <td>153</td>
+            <td>1100</td>
+            <td> <a href="#">微博</a> <a href="#">百科</a> <a href="10.1原神图片链接.html" target="_blank">图片</a> </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>图片1</td>
+            <td>180</td>
+            <td>1500</td>
+            <td> <a href="#">微博</a> <a href="#">百科</a> <a href="10.2绘画图片链接.html" target="_blank">图片</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>图片2</td>
+            <td>183</td>
+            <td>1465</td>
+            <td> <a href="#">微博</a> <a href="#">百科</a> <a href="10.3绘画图片链接.html" target="_blank">图片</a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

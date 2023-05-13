@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础选择器</title>
+    <style>
+        /* 标签选择器 */
+        p {
+            color: pink;
+            
+        }
+        div {
+            color: blue;
+        }
+        /* 类选择器 */   /*多类名的使用*/
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        .blue1 {
+            color: rgb(87, 228, 202);
+        }
+        
+            /* 字体大小（字号） */
+        .font35 {
+            font-size: 35px;
+        }
+        /* id选择器 */
+            /* id选择器 一般用于页面唯一性的元素上，只能被调用一次  经常和JavaScript搭配使用*/
+            /* 样式使用#定义 结构上用id调用 */
+        #green {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>原神</p>
+    <p>原神</p>
+    <p>原神</p>
+    <div>王者荣耀</div>
+    <div>王者荣耀</div>
+    <div>王者荣耀</div>
+
+    <ul>
+        <li class="blue1">砂糖</li>
+        <li class="blue">莫娜</li>
+        <li class="blue1">琴</li>
+        <li class="red">迪希雅</li>
+        <li class="blue1">温迪</li>
+    </ul>
+
+    <div class="red font35">安琪拉</div> 
+    <div id="green">王昭君</div>
+    <div>妲己</div>
+</body>
+</html>

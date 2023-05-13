@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的显示与隐藏（display）</title>
+    <!-- display 属性用于设置一个元素显示与隐藏 -->
+
+    <!-- display: none; 隐藏对象 -->
+    <!-- 特别：1.隐藏的元素不占有原来的位置 -->
+    <!-- 2.只是隐藏元素，并不是删除元素 -->
+
+    <!-- display: block; 除了转换为块级元素之外，同时还有显示元素的意思 -->
+    <style>
+        .first {
+            /* 隐藏 */
+            /* display: none; */
+            /* 显示 */
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .second {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">123</div>
+    <div class="second">456</div>
+</body>
+
+</html>

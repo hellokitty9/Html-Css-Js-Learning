@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器-链接</title>
+    <style>
+        /* 由于一般的浏览器链接具有默认样式 在实际开发中都需要给链接单独指定样式 */
+        /* 使用伪类选择器时 为了确保生效，需要按照:link :visited :hover :active 的顺序声明 */
+        /* 链接伪类选择器在实际开发中一般设置 初始 与 鼠标经过 的状态 */
+        /* 1. 未访问的链接 a:link  把没有点击过的（访问过的）链接选出来 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* 2. a:visited 选择点击过的（访问过的）链接 */
+        a:visited {
+            color: violet;
+        }
+
+        /* 3. a:hover 选择鼠标经过的链接 */
+        a:hover {
+            color: skyblue;
+        }
+
+        /* 4. a:active 选择鼠标正在按下但还没有弹起鼠标的链接 */
+        a:active {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.baidu.com">百度</a>
+    <a href="#">未访问的链接</a>
+</body>
+
+</html>

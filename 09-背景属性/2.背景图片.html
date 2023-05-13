@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <!-- background-image 属性描述了元素的背景图像. 实际开发常见于logo或者一些装饰性的小图片或者是超大的图片,有点是非常便于控制位置 -->
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            /* 不要落下 url() */
+            background-image: url(https://game.gtimg.cn/images/yxzj/web201706/images/comm/logo.png);
+
+            /* 背景图片不平铺（重复） */
+            /* background-repeat: no-repeat; */
+
+            /* 沿x轴平铺 */
+            background-repeat: repeat-x;
+            /* 沿y轴平铺 */
+            background-repeat: repeat-y;
+            /* 页面元素既可以添加背景颜色也可以添加背景图片  只不过背景图片会压住背景图片 */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

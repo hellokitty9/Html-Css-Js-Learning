@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>需要清除浮动</title>
+    <!-- 由于父盒子很多情况下，不方便给高度，但是子盒子浮动又不占有位置，最后会导致父盒子的高度为0 -->
+    <!-- 当父盒子的高度为0时，会影响下面的标准流盒子 -->
+    <style>
+        .box {
+            width: 800px;
+            border: 1px solid blue;
+            margin: 0 auto;
+        }
+
+        .first {
+            float: left;
+            width: 300px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .second {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="first">first</div>
+        <div class="second">second</div>
+    </div>
+</body>
+
+</html>
