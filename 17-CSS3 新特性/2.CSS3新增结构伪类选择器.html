@@ -19,13 +19,38 @@
 
         /* 3.nth-child(n) 选择某个父元素的一个或多个特定的子元素 */
         /* n 可以是数字，关键字和公式 */
-        /* 例：选择第2、6个孩子 */
+        /* 例：选择第2、6个孩子（数字） */
         ul li:nth-child(2) {
             background-color: skyblue;
         }
 
         ul li:nth-child(6) {
             background-color: skyblue;
+        }
+
+        /* 关键字选择  even 选择偶数个  odd 选择奇数个*/
+        ul li:nth-child(even) {
+            background-color: #ccc;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: gray;
+        }
+
+        /* 公式选择 nth-child(n) 从0开始 每次加一 往后计算  里面必须是n 不能是其他字母*/
+        ol li:nth-child(n) {
+            background-color: pink;
+        }
+
+        /* :nth-of-type()  与nth-child()  基本一样*/
+        /* 区别：*/
+        /* 执行的时候首先看  :nth-child(1) 是否匹配  之后回去看前面的div */
+        section div:nth-child(1) {
+            background-color: red;
+        }
+
+        section div:nth-of-type(1) {
+            background-color: blue;
         }
     </style>
 </head>
@@ -41,6 +66,22 @@
         <li>第7个孩子</li>
         <li>第8个孩子</li>
     </ul>
+    <ol>
+        <li>第1个孩子</li>
+        <li>第2个孩子</li>
+        <li>第3个孩子</li>
+        <li>第4个孩子</li>
+        <li>第5个孩子</li>
+        <li>第6个孩子</li>
+        <li>第7个孩子</li>
+        <li>第8个孩子</li>
+    </ol>
+    <!-- 区别 -->
+    <section>
+        <p>1</p>
+        <div>2</div>
+        <div>3</div>
+    </section>
 </body>
 
 </html>
