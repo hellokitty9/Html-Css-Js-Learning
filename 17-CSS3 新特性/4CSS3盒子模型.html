@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3盒子模型</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 10px solid red;
+            padding: 15px;
+            /* 默认 */
+            box-sizing: content-box;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 10px solid red;
+            padding: 15px;
+            /* padding 和 border 不会撑开盒子大小 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <p>
+
+    </p>
+</body>
+
+</html>

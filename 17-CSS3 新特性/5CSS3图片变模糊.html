@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3图片变模糊</title>
+    <style>
+        /* filter CSS属性将模糊或颜色偏移等图形效果应用于元素 */
+
+        img {
+            /* blur是一个函数 小括号里的数值越大，图片越模糊  注意数值要加单位*/
+            display: block;
+            width: 50%;
+            filter: blur(10px);
+        }
+
+        img:hover {
+            filter: blur(0);
+        }
+    </style>
+</head>
+
+<body>
+    模糊效果：
+    <img src="../image/yuanshen.jpg" alt="">
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3计算盒子宽度</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .son {
+            /* calc() 此CSS函数让你在声明CSS属性是执行一些计算 */
+            /* 100%: son盒子 跟 father盒子 一样宽 */
+            width: calc(100% - 30px);
+            height: 30px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
