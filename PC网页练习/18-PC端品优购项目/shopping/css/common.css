@@ -1,0 +1,61 @@
+/* 声明字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7162uh');
+    src: url('../fonts/icomoon.eot?7162uh#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?7162uh') format('truetype'),
+        url('../fonts/icomoon.woff?7162uh') format('woff'),
+        url('../fonts/icomoon.svg?7162uh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+/* 快捷导航模块 */
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.shortcut ul li {
+    position: relative;
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 14px 0 14px;
+}
+
+.shortcut .arrow-icon {
+    margin-right: 10px;
+}
+
+.shortcut .arrow-icon::after {
+    content: '\e900';
+    font-family: 'icomoon';
+    position: absolute;
+    font-size: 12px;
+    top: 1px;
+    margin-left: 2px;
+}
