@@ -59,3 +59,9 @@
     top: 1px;
     margin-left: 2px;
 }
+
+/* header 头部模块 */
+.header {
+    height: 105px;
+    background-color: skyblue;
+}
