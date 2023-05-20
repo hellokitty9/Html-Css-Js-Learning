@@ -1,7 +1,8 @@
 /* 把我们所有标签的内外边距清零 */
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* em 和 i 斜体的文字不倾斜 */
@@ -32,11 +33,18 @@ a {
     text-decoration: none
 }
 
+a:hover {
+    color: #c81623;
+}
 
 button,
 input {
     /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
-    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 手动清除网站搜索框默认的灰色边框 */
+    border: 0;
+    /* 清除网站搜索框默认的点击蓝色边框 */
+    outline: none;
 }
 
 body {

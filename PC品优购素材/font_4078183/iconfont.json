@@ -1,0 +1,44 @@
+{
+  "id": "4078183",
+  "name": "shopping",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "35563476",
+      "name": "location block",
+      "font_class": "a-locationblock",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "35561386",
+      "name": "Instagram line",
+      "font_class": "a-Instagramline",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "35561387",
+      "name": "member block",
+      "font_class": "a-memberblock",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "35563477",
+      "name": "like line",
+      "font_class": "a-likeline",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "35561384",
+      "name": "cart line",
+      "font_class": "a-cartline",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    }
+  ]
+}

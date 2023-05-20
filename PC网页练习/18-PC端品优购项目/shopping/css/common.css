@@ -11,6 +11,14 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: "iconfont";
+    /* Project id 4078183 */
+    src: url('../font_1/iconfont.woff2?t=1684581808898') format('woff2'),
+        url('../font_1/iconfont.woff?t=1684581808898') format('woff'),
+        url('../font_1/iconfont.ttf?t=1684581808898') format('truetype');
+}
+
 .w {
     width: 1200px;
     margin: 0 auto;
@@ -62,6 +70,99 @@
 
 /* header 头部模块 */
 .header {
+    position: relative;
     height: 105px;
-    background-color: skyblue;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../image/logo.png) no-repeat;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 346px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 33px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    padding-left: 8px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+
+}
+
+.shopcar .iconfont {
+    position: absolute;
+    content: '';
+    font-family: 'iconfont' !important;
+    font-size: 15px;
+    left: 20px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    position: absolute;
+    content: '\e902';
+    font-family: 'icomoon';
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.shopcar .count {
+    position: absolute;
+    top: -5px;
+    left: 100px;
+    height: 18px;
+    line-height: 18px;
+    color: white;
+    background-color: #e60012;
+    padding: 0 5px;
+    border-radius: 15px 15px 15px 15px;
 }
