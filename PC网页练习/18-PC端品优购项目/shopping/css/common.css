@@ -346,3 +346,36 @@
     font-size: 16px;
     margin-bottom: 10px;
 }
+
+.mod_copyright {
+    position: relative;
+}
+
+.mod_copyright ul {
+    position: absolute;
+    top: 20px;
+    left: 117px;
+}
+
+.mod_copyright ul li {
+    float: left;
+}
+
+.mod_copyright ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 3px 14px 0 14px;
+}
+
+.mod_copyright ul li a {
+    font-size: 12px;
+}
+
+.mod_copyright .copyright {
+    position: absolute;
+    text-align: center;
+    top: 48px;
+    left: 240px;
+    line-height: 20px;
+}
