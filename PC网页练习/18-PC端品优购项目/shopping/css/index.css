@@ -1,0 +1,28 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.main .news {
+    height: 165px;
+    background-color: pink;
+}
+
+.mian .lifeservice {
+    height: 209px;
+    background-color: skyblue;
+}

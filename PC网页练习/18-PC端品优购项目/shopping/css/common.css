@@ -194,7 +194,7 @@
 }
 
 .dropdown .dd {
-    display: none;
+    /* display: none; */
     width: 210px;
     height: 468px;
     background-color: #c81623;
