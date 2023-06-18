@@ -13,7 +13,7 @@
 
 .main .newsflash {
     float: right;
-    width: 250px;
+    width: 252px;
     height: 455px;
 }
 
@@ -55,9 +55,317 @@
 }
 
 .main .newsflash .lifeservice {
+    overflow: hidden;
     height: 209px;
-    background-color: purple;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
 }
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    text-align: center;
+    width: 63px;
+    height: 71px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    border-left: 0;
+}
+
+.lifeservice ul li a {
+    float: left;
+    width: 63px;
+    height: 71px;
+}
+
+.lifeservice ul li a .icon1 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -17px -16px;
+}
+
+.lifeservice ul li a .icon2 {
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -78px -16px;
+}
+
+.lifeservice ul li a .icon3 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -141px -16px;
+}
+
+.lifeservice ul li a .icon4 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -206px -16px;
+}
+
+.lifeservice ul li a .icon5 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -17px -88px;
+}
+
+.lifeservice ul li a .icon6 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -78px -88px;
+}
+
+.lifeservice ul li a .icon7 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -141px -88px;
+}
+
+.lifeservice ul li a .icon8 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -206px -88px;
+}
+
+.lifeservice ul li a .icon9 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -17px -159px;
+}
+
+.lifeservice ul li a .icon10 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -78px -159px;
+}
+
+.lifeservice ul li a .icon11 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -141px -159px;
+}
+
+.lifeservice ul li a .icon12 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background: url(../image/icons.png) no-repeat -206px -159px;
+}
+
+.recom {
+    height: 162px;
+    margin-top: 12px;
+}
+
+.recom .recom_head {
+    float: left;
+    height: 162px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 31px;
+}
+
+.recom .recom_body {
+    float: left;
+    height: 162px;
+    width: 994px;
+    background-color: #ebebeb;
+}
+
+.recom .recom_body ul li {
+    float: left;
+    position: relative;
+    width: 247px;
+    height: 162px;
+}
+
+.recom .recom_body ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 248px;
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+}
+
+.recom .recom_body ul li h5 {
+    position: absolute;
+    top: 19px;
+    left: 22px;
+    font-size: 16px;
+}
+
+.recom .recom_body img {
+    float: right;
+    margin-top: 26px;
+    margin-right: 28px;
+}
+
+.recom .recom_body .discount_01 {
+    position: absolute;
+    top: 50px;
+    left: 19px;
+}
+
+.recom .recom_body .discount_01 .discount_top {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 3px;
+    background-color: #00a0e8;
+}
+
+.discount_bottom {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.recom .recom_body .discount_02 {
+    position: absolute;
+    top: 50px;
+    left: 19px;
+}
+
+.recom .recom_body .discount_02 .discount_top {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 3px;
+    background-color: #5fb200;
+}
+
+.discount_bottom {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.recom .recom_body .button_02 {
+    position: absolute;
+    top: 106px;
+    left: 22px;
+    width: 57px;
+    height: 18px;
+    border-radius: 9px 9px 9px 9px;
+    background-color: #5fb200;
+    text-align: center;
+}
+
+.recom .recom_body .button_02 p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.recom .recom_body .discount_03 {
+    position: absolute;
+    top: 50px;
+    left: 19px;
+}
+
+.recom .recom_body .discount_03 .discount_top {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 3px;
+    background-color: #e2162f;
+}
+
+.discount_bottom {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.recom .recom_body .button_03 {
+    position: absolute;
+    top: 106px;
+    left: 22px;
+    width: 57px;
+    height: 18px;
+    border-radius: 9px 9px 9px 9px;
+    background-color: #e2162f;
+    text-align: center;
+}
+
+.recom .recom_body .button_03 p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+
+
+.recom .recom_body .discount_04 {
+    position: absolute;
+    top: 50px;
+    left: 19px;
+}
+
+.recom .recom_body .discount_04 .discount_top {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 3px;
+    background-color: #e2162f;
+}
+
+.discount_bottom {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.recom .recom_body .button_04 {
+    position: absolute;
+    top: 106px;
+    left: 22px;
+    width: 57px;
+    height: 18px;
+    border-radius: 9px 9px 9px 9px;
+    background-color: #e2162f;
+    text-align: center;
+}
+
+.recom .recom_body .button_04 p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
 
 .main .newsflash .bargain {
     margin-top: 5px;
