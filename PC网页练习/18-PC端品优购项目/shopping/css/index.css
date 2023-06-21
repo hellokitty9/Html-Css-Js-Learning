@@ -408,6 +408,10 @@
     margin-left: 19px;
 }
 
+.love_body div[id] {
+    border-right: 1px solid #ededed;
+}
+
 .love_body ul li .description {
     width: 120px;
     height: 33px;
