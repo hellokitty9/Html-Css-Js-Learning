@@ -388,13 +388,18 @@
     line-height: 38px;
 }
 
+.love_head .change .iconfont {
+    font-family: 'iconfont';
+}
+
 .love .love_body {
     height: 231px;
+    border: 1px solid #ededed;
 }
 
 .love .love_body ul li {
     float: left;
-    width: 200px;
+    width: 199px;
     height: 231px;
 }
 
@@ -416,7 +421,7 @@
 }
 
 .love_body ul li .price {
-    margin-top: 8px;
+    margin-top: 2px;
     margin-left: 35px;
     font-size: 18px;
     color: #df3033;
