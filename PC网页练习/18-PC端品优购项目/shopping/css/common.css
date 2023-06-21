@@ -12,11 +12,10 @@
 }
 
 @font-face {
-    font-family: "iconfont";
-    /* Project id 4078183 */
-    src: url('../font_1/iconfont.woff2?t=1684581808898') format('woff2'),
-        url('../font_1/iconfont.woff?t=1684581808898') format('woff'),
-        url('../font_1/iconfont.ttf?t=1684581808898') format('truetype');
+    font-family: 'iconfont';
+    src: url('../font_1/iconfont.woff2?t=1687357925449') format('woff2'),
+        url('../font_1/iconfont.woff?t=1687357925449') format('woff'),
+        url('../font_1/iconfont.ttf?t=1687357925449') format('truetype');
 }
 
 .w {
