@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7162uh');
+    src: url('../fonts/icomoon.eot?7162uh#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?7162uh') format('truetype'),
+        url('../fonts/icomoon.woff?7162uh') format('woff'),
+        url('../fonts/icomoon.svg?7162uh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 列表页样式 */
+.nav {
+    overflow: hidden;
+}
+
+.seckill {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+.seckill .seckill_list {
+    float: left;
+}
+
+.seckill_list ul li {
+    float: left;
+}
+
+.seckill_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.seckill_con {
+    float: left;
+}
+
+.seckill_con ul li {
+    float: left;
+}
+
+.seckill_con ul {
+    margin-left: 35px;
+}
+
+.seckill_con ul li a {
+    display: block;
+    line-height: 49px;
+    font-size: 14px;
+    padding: 0 22px;
+}
+
+.seckill_con ul li:last-child a::after {
+    content: '\e900';
+    font-family: 'icomoon';
+    margin-left: 2px;
+}
+
+.sk_bd ul li {
+    float: left;
+    overflow: hidden;
+    width: 290px;
+    height: 460px;
+    margin-left: 13px;
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:nth-child(4n+1) {
+    margin-left: 1px;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
+
+.sk_bd ul li .description {
+    margin-left: 12px;
+    font-size: 14px;
+}
+
+.sk_bd .p {
+    width: 290px;
+    height: 42px;
+    margin-left: 10px;
+    color: #666666;
+}
+
+.sk_bd .price {
+    float: left;
+    font-size: 22px;
+    font-weight: 700;
+    color: #e60012;
+    padding-top: 8px;
+}
+
+.sk_bd .old_price {
+    float: left;
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 700;
+    color: #a4a4a4;
+    padding-top: 16px;
+    margin-left: 8px;
+}
+
+.sk_bd .sold,
+.sk_bd .bar,
+.sk_bd .remain {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.sk_bd .sold {
+    float: left;
+    font-size: 13px;
+    margin-left: 12px;
+    color: #666;
+}
+
+.sk_bd .bar {
+    float: left;
+    overflow: hidden;
+    width: 130px;
+    height: 10px;
+    margin-top: 8px;
+    margin-left: 12px;
+    border: 1px solid #ed282e;
+    border-radius: 6px;
+}
+
+.sk_bd .bar_in {
+    width: 87%;
+    height: 100%;
+    background-color: #ed282e;
+}
+
+.sk_bd .remain {
+    margin-left: 12px;
+    font-size: 13px;
+    color: #666;
+}
+
+.sk_bd span {
+    color: #e12228;
+}
+
+.sk_bd .button {
+    width: 290px;
+    height: 50px;
+    margin-top: 14px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #b1191a;
+    color: #fff;
+}
