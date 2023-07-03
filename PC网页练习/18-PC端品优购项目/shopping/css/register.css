@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7162uh');
+    src: url('../fonts/icomoon.eot?7162uh#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?7162uh') format('truetype'),
+        url('../fonts/icomoon.woff?7162uh') format('woff'),
+        url('../fonts/icomoon.svg?7162uh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+
+.logo {
+    padding-top: 18px;
+}
+
+.registerarea {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.registerarea .hd {
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+}
+
+.registerarea h3,
+.registerarea .login {
+    display: inline-block;
+}
+
+.registerarea h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 42px;
+    padding-left: 11px;
+}
+
+.login {
+    float: right;
+    line-height: 42px;
+}
+
+.registerarea .hd a {
+    padding-right: 11px;
+    color: #c81623;
+}
+
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.reg_form ul li input {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+
+.reg_form ul li .error,
+.reg_form ul li .success {
+    color: #df3033;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+/* 错误情况下的另一种做法 */
+/* .reg_form ul li .error::before {
+    position: relative;
+    top: 4px;
+    font-family: 'icomoon';
+    content: '\e90c';
+    padding-right: 8px;
+    font-size: 20px;
+    font-weight: 500;
+} */
+.reg_form ul li {
+    margin-top: 20px;
+}
+
+.reg_form ul li .error i,
+.reg_form ul li .success i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+    background: url(../image/error.png) no-repeat;
+}
+
+.reg_form ul li .success {
+    color: #40b83f;
+}
+
+.reg_form ul li .success i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+    background: url(../image/success.png) no-repeat;
+}
+
+.reg_form .safe {
+    margin-left: 155px;
+    color: #b2b2b2;
+}
+
+.reg_form .safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+.reg_form .safe em:nth-child(1) {
+    margin-left: 8px;
+    background-color: #de1111;
+}
+
+.reg_form .safe em:nth-child(2) {
+    background: #f79100;
+}
+
+.reg_form .safe em:nth-child(3) {
+    background: #40b83f;
+}
