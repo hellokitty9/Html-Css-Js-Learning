@@ -403,9 +403,14 @@
     height: 231px;
 }
 
+.love_body ul li:hover img {
+    transform: translateY(-5px);
+}
+
 .love_body ul li img {
     margin-top: 13px;
     margin-left: 19px;
+    transition: all .2s ease;
 }
 
 .love_body div[id] {
