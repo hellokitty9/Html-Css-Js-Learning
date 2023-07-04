@@ -60,7 +60,7 @@ header {
 
 .reg_form {
     width: 600px;
-    margin: 50px auto 0;
+    margin: 50px 0 0 350px;
 }
 
 .reg_form ul li label {
@@ -70,9 +70,10 @@ header {
     text-align: right;
 }
 
-.reg_form ul li input {
+.reg_form ul li input[type='text'] {
     width: 242px;
     height: 37px;
+    font-size: 14px;
     border: 1px solid #ccc;
 }
 
@@ -144,4 +145,66 @@ header {
 
 .reg_form .safe em:nth-child(3) {
     background: #40b83f;
+}
+
+.reg_form input {
+    vertical-align: middle;
+}
+
+.reg_form .agree input[type='checkbox'] {
+    transform: scale(1.1);
+}
+
+.reg_form .agree {
+    padding-left: 95px;
+    font-size: 13px;
+}
+
+.reg_form .agree a {
+    color: #1ba1e6;
+}
+
+.reg_form input[type='submit'] {
+    width: 200px;
+    height: 34px;
+    color: #fff;
+    background-color: #c81623;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+/* 底部 */
+.mod_copyright {
+    position: relative;
+    margin-top: 30px;
+}
+
+.mod_copyright ul {
+    position: absolute;
+    top: 20px;
+    left: 117px;
+}
+
+.mod_copyright ul li {
+    float: left;
+}
+
+.mod_copyright ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 3px 14px 0 14px;
+}
+
+.mod_copyright ul li a {
+    font-size: 12px;
+}
+
+.mod_copyright .copyright {
+    position: absolute;
+    text-align: center;
+    top: 48px;
+    left: 240px;
+    line-height: 20px;
 }
