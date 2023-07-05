@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缩放-scale</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        div:hover {
+            /* transform: scale(x, y); （其中x和y分别是宽和高的倍数,不跟单位）  基本语法（注意：使用，隔开） */
+            /* transform: scale(x);  输入一个数表示宽和高放大或缩小的倍数一致 */
+
+            /* 等于1不变，小于1的绝对值缩小，大于1的绝对值放大 */
+            /* 输入数值为负数时，界面会反向缩放 */
+
+            /* scale 的优势之处: 不会影响其他盒子 而且可以设置中心点（默认以中心缩放） */
+
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

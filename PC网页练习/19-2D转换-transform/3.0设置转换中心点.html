@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置转换中心点</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 50px auto;
+            transform-origin: 50px 50px;
+            transition: all 0.8s ease;
+
+            /* 语法：transform-origin: x y; */
+
+            /* 1.注意后面的参数 x和 y用空格隔开 */
+            /* 2.x y默认转换的中心点是元素的中心点（50% 50%） */
+            /* 3.还可以给 x y设置 像素 或者 方位名词（top bottom left right center） */
+
+        }
+
+        div:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

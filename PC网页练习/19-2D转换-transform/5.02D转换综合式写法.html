@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D转换综合式写法</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* transform: translate() rotate() scale();  中间使用空格隔开*/
+            /* 上述3种变化 顺序会影响变化的方式 */
+            /* 当进行综合式写法，有位移和其他属性时，位移放到最前面 */
+            transition: all .3s;
+        }
+
+        div:hover {
+            /* transform: rotate(180deg) translate(40px, 40px); */
+
+            transform: translate(40px, 40px) rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

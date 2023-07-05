@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平移-translate</title>
+    <style>
+        div:first-child {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* translate(x,y) */
+            /* x 表示横坐标  y 表示纵坐标    （注意网页坐标轴） */
+            transform: translate(50px, 50px);
+
+            /* 单独平移 x 或 y 轴：translateX() 或 translateY() */
+            /* transform: translateX(50px); */
+            /* transform: translateY(50px); */
+
+            /* translate(x,y) 其中 x,y 可以是百分比数值 */
+            /* 注意：百分比数值是相对于自身长度或宽度 */
+            /* transform: translateX(50%); */
+            /* transform: translateY(50%); /* transform: translateX(50px); */
+            /* transform: translateY(50px); */
+
+            /* 对行内标签没有效果 */
+
+            /* translate最大的优点：不会影响到其他元素的位置 */
+        }
+
+        div:last-child {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
