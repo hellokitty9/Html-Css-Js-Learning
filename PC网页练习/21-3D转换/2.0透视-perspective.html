@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>透视-perspective</title>
+    <style>
+        body {
+            /* 注意：透视写在被观察元素的父盒子上面的 */
+            /* 透视的数值越小,被观察的物体越大 */
+            perspective: 500px;
+        }
+
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            /* 透视：也成为视距，视距是人眼到屏幕的距离 */
+            /* 透视的单位是像素 */
+
+            transform: translate3d(500px, 100px, 100px);
+        }
+
+        /* body div:hover {
+            perspective: 200px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

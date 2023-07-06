@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转-rotate</title>
+    <style>
+        body {
+            perspective: 1000px;
+        }
+
+        img {
+            display: block;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+
+        /* img:hover {
+            transform: rotateX(360deg);
+        } */
+
+
+        img:hover {
+            /* 3D旋转的复合写法：transform: rotate3d(x, y, z, deg) */
+            /* 其中 x，y，z 符合坐标系的矢量加法运算 */
+            transform: rotate3d(1, 1, 0, 45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../image/yuanshen.png" alt="">
+</body>
+
+</html>

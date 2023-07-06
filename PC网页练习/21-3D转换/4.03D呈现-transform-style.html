@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D呈现-transform-style</title>
+    <style>
+        body {
+
+            perspective: 500px;
+        }
+
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            perspective: 500px;
+            /* 3D呈现 transform-style: flat; 默认效果(子元素不开启3D立体空间)   */
+            /* transform-style: preserve-3d;  子元素开启立体空间*/
+
+            /* 注意：代码写给父级，但是影响的是子盒子 */
+            transform-style: preserve-3d;
+            transition: all 2s;
+
+        }
+
+        .box:hover {
+            /* transform: rotateY(45deg); */
+            transform: rotate3d(-1, -1, -1, 90deg)
+        }
+
+        .box div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: hotpink;
+        }
+
+        .box div:last-child {
+            background-color: purple;
+            transform: rotateX(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

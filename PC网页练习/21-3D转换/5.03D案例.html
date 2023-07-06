@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D案例</title>
+    <style>
+        body {
+            perspective: 600px;
+        }
+
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            transition: all .4s;
+            transform-style: preserve-3d;
+        }
+
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .last {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        .front {
+            background-color: pink;
+            transform: translateZ(1px);
+        }
+
+        .last {
+            background-color: purple;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="front">123</div>
+        <div class="last">456</div>
+    </div>
+</body>
+
+</html>
